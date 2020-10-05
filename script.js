@@ -20,12 +20,16 @@ var randomFunc = {
 };
 
 generateBtn.addEventListener("click", () => {
-    var lengthVal = +lengthEl.value;
-    var hasUpper = uppercaseEl.checked;
-    var hasLower = lowercaseEl.checked;
-    var hasNumbers = numbersEl.checked;
-    var hasSpecial = specialEl.checked;
-    
+    if(lengthEl.value >= 8){
+        var lengthVal = +lengthEl.value;
+        var hasUpper = uppercaseEl.checked;
+        var hasLower = lowercaseEl.checked;
+        var hasNumbers = numbersEl.checked;
+        var hasSpecial = specialEl.checked;
+
+    }else{
+        return alert("Please Enter a password length betwen 8-256");
+    }
     passwordEl.innerText = generatePassword(hasUpper, hasLower, hasNumbers, hasSpecial, lengthVal);
 });
 
