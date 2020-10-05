@@ -28,7 +28,7 @@ generateBtn.addEventListener("click", () => {
         var hasSpecial = specialEl.checked;
 
     }else{
-        return alert("Please Enter a password length betwen 8-256");
+        return alert("Please Enter a password length betwen 8-128");
     }
     passwordEl.innerText = generatePassword(hasUpper, hasLower, hasNumbers, hasSpecial, lengthVal);
 });
