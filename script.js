@@ -9,8 +9,8 @@ var passwordEl = document.querySelector("#password");
 // character set
 var upperChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var lowerChar = upperChar.toLowerCase();
-var specialChar = "0123456789";
-var numChar = "!@#$%^&*()[]=<>/,.";
+var numChar = "0123456789";
+var specialChar = "!@#$%^&*()[]=<>/,.";
 
 var randomFunc = {
     upper: getRandomUpper,
